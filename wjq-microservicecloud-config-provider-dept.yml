@@ -55,7 +55,7 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
-   profiles: dev
+   profiles: test
    application:
     name: wjq-microservicecloud-dept
    datasource:
