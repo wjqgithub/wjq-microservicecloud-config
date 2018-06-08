@@ -1,1 +1,32 @@
 
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8081
+spring:
+  profiles: dev
+  application:
+    name: wjq-microservicecloud-config-client
+eureka:
+  client:
+    service-url:  
+      defaultZone:  http://eureka-dev.com:7001/eureka/
+---
+server:
+  port: 8082
+spring:
+  profiles: 
+    active: test
+  application:  
+    name: wjq-microservicecloud-config-client
+eureka:
+  client:
+    service-url:  
+      defaultZone:  http://eureka-test.com:7002/eureka/
+      
+      
+      
+      
